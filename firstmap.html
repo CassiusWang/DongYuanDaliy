@@ -1,0 +1,69 @@
+<!--
+@author CassiusWang
+@email wang_ke_xin_0@outlook.com
+@create date 2018-08-01 09:41:48
+@modify date 2018-08-05 18:15:00
+@desc DONGYUANDAILY 
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>冬元日报</title>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+        <link rel="stylesheet" type="text/css" href="css/cover.css">
+        <meta http-equiv="refresh" content="" charset="UTF-8">
+        <meta name="Generator" content="Editplus">
+        <meta name="Author" content="">
+        <meta name="Keywords" content="">
+        <meta name="Description" content="">
+        <meta name="viewport"
+            content="width=divice-width,initial-scale=1.0,maximun-scale=1.0,minimum-scale=1.0,user-scalable=no">
+        <script type="text/javascript">
+            function disptime(){
+                var today=new Date();
+                var hh=today.getHours();
+                var mm=today.getMinutes();
+                var ss=today.getSeconds();
+                document.getElementById("myclock").innerHTML="<h1>北京时间:"+hh+":"+mm+":"+ss+"<h1>";
+                var myTime=setTimeout("disptime(),1000");
+            }
+        </script>
+    </head>
+    <body background="images/background-homepage.jpg" onload="disptime()">
+        <audio hidden="true" autoplay="autoplay" loop="true" controls="controls">
+            <source src="media/musics/liumang-hua删掉zhou.mp3" type="audio/mpeg"/><!--背景音乐开关-->
+        </audio>
+        <div id="myclock" style="color:#eff7a7"></div>
+        <table cellpadding="30">
+            <tr>
+                <td>
+                    <a href=
+"http://mp.weixin.qq.com/mp/homepage?
+__biz=MzU4NjQxMDU1OA==&hid=1&sn=8fa3722419c98588d54987b0816a64d4&scene=
+18#wechat_redirect" target="blank" style="color:#eff7a7">
+                        计算机资料库
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href=
+"http://mp.weixin.qq.com/mp/homepage?
+__biz=MzU4NjQxMDU1OA==&hid=3&sn=edbbb779a1d46024f7a0f10b7e8dd5f5&scene=
+18#wechat_redirect" target="blank" style="color:#eff7a7">
+                        冬元每日纪事报
+                    </a>
+                </td>
+            </tr>
+        </table>
+        <video controls height="320" width="480" loop>
+            <source src="media/movies/reading.mp4">
+            <span>
+                您的浏览器不支持video标签
+            </span>
+        </video>
+        </movie><br/>
+        <a href="tencent://message/?uin=输入QQ号&Site=http://vps.shuidazhe.com&Menu=yes">PC版</a>
+        <a href="mqqwpa://im/chat?chat_type=wpa&web_src=oicqzone.com">移动版</a>
+    </body>
+</html>
